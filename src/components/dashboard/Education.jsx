@@ -57,7 +57,6 @@ Education.propTypes = {
   deleteEducation: PropTypes.func.isRequired
 };
 
-//   const mapStateToProps = (state) => ({
-//   });
+
 
 export default connect(null, { deleteEducation })(Education);
