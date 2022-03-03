@@ -1,8 +1,9 @@
 import { SET_ALERT, REMOVE_ALERT } from "../actions/types";
+import Alert from './../components/layout/Alert';
 
 const initialState = [];
 
-export default function(state = initialState, action){
+const Alert=(state = initialState, action) => {
     
     const { type, payload } = action;
 
@@ -16,6 +17,8 @@ export default function(state = initialState, action){
           
    }
 }
+
+export default Alert;
 
 
 

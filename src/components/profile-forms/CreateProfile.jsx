@@ -35,7 +35,6 @@ const CreateProfile = ({ auth, createProfile:createProfileForUser}) => {
       company,
       website,
       location,
-      status,
       skills,
       githubusername,
       bio,

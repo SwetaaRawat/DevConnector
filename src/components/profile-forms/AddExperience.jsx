@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { useNavigate, NavLink } from 'react-router-dom';
 import { addExperience } from '../../actions/profile';
-import { Button, FormGroup, Input } from "reactstrap";
+import { Button, Input } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 

@@ -48,9 +48,9 @@ const Profiles = ({
 
 
 Profiles.propTypes = {
-    getProfiles: PropTypes.func.isRequired,
-    profile: PropTypes.object.isRequired,
-    auth: PropTypes.object.isRequired
+    getProfiles:PropTypes.func.isRequired,
+    profile:PropTypes.object.isRequired,
+    auth:PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
