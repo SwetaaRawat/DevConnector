@@ -22,7 +22,7 @@ const Dashboard = (props) => {
 
   useEffect(() => {
     if (isAuthenticated || loading) props.getCurrentProfile();
-  }, [getCurrentProfile, loading, isAuthenticated]);
+  }, [getCurrentProfile, loading, isAuthenticated, props]);
 
   if (!isAuthenticated && !loading) return <Navigate to="/login" />;
 
