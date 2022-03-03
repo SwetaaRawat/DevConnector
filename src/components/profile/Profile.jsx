@@ -10,13 +10,11 @@ import ProfileExperience from './ProfileExperience';
 import ProfileEducation from './ProfileEducation';
 import ProfileGithub from './ProfileGithub';
 
-
 const Profile = ({
     getProfileById, 
     profile: { profile, loading }, 
     auth 
-    
-}) => { const{id} = useParams()
+    }) => { const{id} = useParams()
     useEffect(() => {
         getProfileById( id)
     }, [getProfileById, id]);
@@ -55,7 +53,7 @@ const Profile = ({
                 </div>
                 
                 {profile.githubusername && (
-                    <ProfileGithub username={profile.githubusername}  />
+                    <ProfileGithub username={profile.githubusername} />
                 )} 
             </div>
         </Fragment>
