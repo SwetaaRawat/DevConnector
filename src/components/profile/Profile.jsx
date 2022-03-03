@@ -42,7 +42,6 @@ const Profile = ({
                       ))}
                     </Fragment>) : (<h4>No Experience Credentials</h4>) }
                 </div>
-
                 <div className='profile-edu bg-white p-2'>
                     <h2 className='text-info'>Education</h2>
                     {profile.education.length > 0 ? (<Fragment>
@@ -53,16 +52,14 @@ const Profile = ({
                 </div>
                 
                 {profile.githubusername && (
-                    <ProfileGithub username={profile.githubusername} />
+                    <ProfileGithub username={profile.githubusername}/>
                 )} 
             </div>
         </Fragment>
        )}
-        
-  </div>
+        </div>
   </Fragment>
-
-       };
+ };
 
 Profile.propTypes = {
 getProfileById:PropTypes.func.isRequired,
