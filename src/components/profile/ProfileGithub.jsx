@@ -8,7 +8,7 @@ import { Spinner } from 'reactstrap';
 const ProfileGithub = ({ username, getGithubRepos, repos}) => {
     useEffect(() => {
         getGithubRepos(username);
-    }, [getGithubRepos(username)] );
+    }, [getGithubRepos, username] );
   return (
     <div className='profile-github'>
         <h2 className='text-info my-1'>Github Repos</h2>

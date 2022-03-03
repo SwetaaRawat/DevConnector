@@ -76,7 +76,7 @@ export const removeLike = id => async dispatch => {
      // Delete post
      export const deletePost = id => async dispatch => {
         try {
-           const res = await axios.delete(BASE_URL+ `/api/posts/${id}`);
+           await axios.delete(BASE_URL+ `/api/posts/${id}`);
 
            dispatch({
               type: DELETE_POST,
@@ -176,7 +176,7 @@ export const removeLike = id => async dispatch => {
   export const deleteComment = (postId, commentId) => async dispatch => {
   
    try {
-      const res = await axios.delete(BASE_URL+ `/api/posts/comment/${postId}/${commentId}`);
+      await axios.delete(BASE_URL+ `/api/posts/comment/${postId}/${commentId}`);
 
       dispatch({
          type: REMOVE_COMMENT,
